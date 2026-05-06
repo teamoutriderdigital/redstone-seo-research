@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redstone SEO Keyword Research &amp; Sitemap | 2026-05-06</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#B21E24;
+  --red-dark:#8B1519;
+  --bg:#FFFFFF;
+  --surface:#F5F5F5;
+  --surface-2:#EFEFEF;
+  --dark:#000000;
+  --text:#000000;
+  --text2:#3F3F3F;
+  --text3:#666666;
+  --muted:#999999;
+  --border:#E0E0E0;
+  --green:#16a34a;
+  --blue:#2563eb;
+  --orange:#ea580c;
+  --purple:#7c3aed;
+  --yellow:#ca8a04;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.55;font-size:15px}
+.container{max-width:1280px;margin:0 auto;padding:0 40px}
+section{padding:64px 0;border-top:1px solid var(--border)}
+section:first-of-type{border-top:none}
+.band-dark{background:var(--dark);color:#fff;border-top:none}
+.band-dark p{color:#bbb}
+.band-surface{background:var(--surface)}
+h1{font-size:2.6em;font-weight:800;letter-spacing:-0.025em;line-height:1.05}
+h2{font-size:1.7em;font-weight:700;letter-spacing:-0.015em;margin-bottom:24px;line-height:1.15}
+h3{font-size:1.2em;font-weight:700;margin-bottom:14px;letter-spacing:-0.005em}
+h4{font-size:0.95em;font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.06em}
+.section-num{color:var(--red);font-size:0.78em;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px}
+p{margin-bottom:14px;color:var(--text2)}
+.lede{font-size:1.05em;color:var(--text);max-width:880px}
+table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:0.88em}
+th,td{text-align:left;padding:11px 14px;border:1px solid var(--border);vertical-align:top}
+th{background:var(--surface);font-weight:600;font-size:0.78em;text-transform:uppercase;letter-spacing:0.06em;color:var(--text3)}
+.band-dark th{background:#0E0E0E;border-color:#222;color:#888}
+.band-dark td{border-color:#1F1F1F;color:#ccc}
+td code{font-family:'JetBrains Mono',monospace;font-size:0.85em;background:var(--surface);padding:1px 5px;border:1px solid var(--border)}
+.band-dark td code{background:transparent;border:none;color:#4fc3f7;font-size:0.82em;padding:0;word-break:break-all;display:block;line-height:1.5}
+.band-dark table{font-size:0.95em}
+.band-dark th{font-size:0.82em}
+.tag{display:inline-block;padding:2px 8px;font-size:0.7em;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin:1px 2px}
+.tag-red{background:var(--red);color:#fff}
+.tag-green{background:var(--green);color:#fff}
+.tag-blue{background:var(--blue);color:#fff}
+.tag-orange{background:var(--orange);color:#fff}
+.tag-purple{background:var(--purple);color:#fff}
+.tag-yellow{background:var(--yellow);color:#000}
+.tag-dark{background:var(--dark);color:#fff}
+.tag-outline{background:transparent;border:1px solid var(--border);color:var(--text3)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{border:1px solid var(--border);padding:22px;background:var(--bg)}
+.card-surface{background:var(--surface)}
+.priority-p0{border-left:4px solid var(--red)}
+.priority-p1{border-left:4px solid var(--orange)}
+.priority-p2{border-left:4px solid var(--blue)}
+ul,ol{margin:6px 0 14px 22px}
+li{margin-bottom:5px;color:var(--text2);font-size:0.93em}
+.stat{padding:18px;border:1px solid var(--border);text-align:center}
+.stat-num{font-size:2.1em;font-weight:800;letter-spacing:-0.025em;line-height:1}
+.stat-label{font-size:0.7em;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-top:6px;font-weight:600}
+.stat-sub{font-size:0.78em;color:var(--text3);margin-top:6px}
+.callout{border-left:4px solid var(--red);padding:18px 22px;background:var(--surface);margin:18px 0}
+.callout-warn{border-left:4px solid var(--orange);padding:18px 22px;background:#FFF7ED;margin:18px 0}
+.callout-info{border-left:4px solid var(--blue);padding:18px 22px;background:#EFF6FF;margin:18px 0}
+.callout-good{border-left:4px solid var(--green);padding:18px 22px;background:#F0FDF4;margin:18px 0}
+.toc{columns:2;column-gap:36px;list-style:none;margin:0;padding:0}
+.toc li{margin-bottom:7px;font-size:0.9em;break-inside:avoid;list-style:none}
+.toc a{color:var(--text2);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:1px}
+.toc a:hover{color:var(--red);border-color:var(--red)}
+a{color:var(--red);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--red-dark)}
+.scroll-x{overflow-x:auto}
+.tree{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.7;background:var(--surface);border:1px solid var(--border);padding:24px 28px;white-space:pre;overflow-x:auto;color:var(--text)}
+.tree .lvl0{color:var(--red);font-weight:700}
+.tree .lvl1{color:var(--text);font-weight:600}
+.tree .lvl2{color:var(--text2)}
+.tree .lvl3{color:var(--text3);font-size:0.92em}
+.tree .note{color:var(--muted);font-size:0.85em;font-style:italic}
+.tree .existing{color:#4fc3f7;font-weight:600}
+.tree .new-page{color:#999}
+.tree .p0{color:var(--red)}
+.tree .p1{color:var(--orange)}
+.tree .p2{color:var(--blue)}
+.tree .hub-label{color:var(--red);font-weight:700;font-size:1.05em;letter-spacing:0.02em}
+.tree .connector{color:#333}
+.tree .vol{color:#4caf50;font-size:0.82em;font-weight:600}
+.tree .kd{color:#ff9800;font-size:0.82em}
+.tree .priority-badge{display:inline-block;padding:1px 6px;font-size:0.72em;font-weight:700;letter-spacing:0.04em;border-radius:3px;margin-left:6px;vertical-align:middle}
+.tree .badge-p0{background:var(--red);color:#fff}
+.tree .badge-p1{background:var(--orange);color:#fff}
+.tree .badge-p2{background:var(--blue);color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin:8px 0 20px;font-size:0.82em;color:var(--text3)}
+.legend-item{display:flex;align-items:center;gap:6px}
+.legend-dot{width:10px;height:10px;border:1px solid var(--text)}
+.cite{font-size:0.78em;color:var(--muted);margin-top:6px;font-style:italic}
+hr.dashed{border:none;border-top:1px dashed var(--border);margin:28px 0}
+@media(max-width:880px){
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .container{padding:0 22px}
+  h1{font-size:1.85em}
+  h2{font-size:1.35em}
+  .toc{columns:1}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="band-dark" style="padding:88px 0 64px;border-bottom:1px solid #1F1F1F">
+<div class="container">
+<div class="section-num" style="color:#999">SEO Keyword Research &amp; Sitemap | Redstone Manufacturing</div>
+<h1>Keyword Research, Hub Analysis<br><span style="color:var(--red)">&amp; SEO-Ready Sitemap</span></h1>
+<p class="lede" style="color:#ddd;font-size:1.1em;margin-top:18px">
+Fresh keyword research from a blank slate per Eric's directive. 90 strategic keywords across 7 service categories. Data-backed hub structure recommendation. 71-page SEO sitemap with phased build priorities. All data sourced from SEMrush phrase-match exports (May 6) + DataForSEO SERP analysis + competitor gap data (Xometry, Fictiv) + new keyword expansion list.
+</p>
+<div style="display:flex;flex-wrap:wrap;gap:32px;margin-top:28px;font-size:0.85em;color:#888">
+<span><strong style="color:#fff">Date</strong>&nbsp; May 6, 2026</span>
+<span><strong style="color:#fff">For</strong>&nbsp; Thu May 7 Eric call</span>
+<span><strong style="color:#fff">Keywords</strong>&nbsp; 90 researched</span>
+<span><strong style="color:#fff">Pages</strong>&nbsp; 71 in sitemap</span>
+<span><strong style="color:#fff">Sources</strong>&nbsp; SEMrush + DataForSEO + Ahrefs gap + new keywords</span>
+</div>
+</div>
+</section>
+
+<!-- TOC -->
+<section style="padding:36px 0">
+<div class="container">
+<h4 style="color:var(--muted)">Contents</h4>
+<ul class="toc">
+<li><a href="#summary">1&nbsp; Executive summary</a></li>
+<li><a href="#diecasting">2&nbsp; Die casting variant analysis (Eric's ask)</a></li>
+<li><a href="#keywords">3&nbsp; Keyword universe (90 keywords)</a></li>
+<li><a href="#hyphen">4&nbsp; Hyphenated domain audit (redstone-manufacturing.com)</a></li>
+<li><a href="#hub">5&nbsp; Hub structure: industries vs metals</a></li>
+<li><a href="#xometry">6&nbsp; Xometry Learning/Tools: yes or no?</a></li>
+<li><a href="#urltree">7&nbsp; Full URL tree (71 pages)</a></li>
+<li><a href="#sitemap">8&nbsp; SEO-ready sitemap (detail tables)</a></li>
+<li><a href="#competitors">9&nbsp; SERP competitor landscape</a></li>
+<li><a href="#rankings">10&nbsp; Redstone current rankings</a></li>
+<li><a href="#next">11&nbsp; Next steps &amp; timeline</a></li>
+</ul>
+</div>
+</section>
+
+<!-- 01 SUMMARY -->
+<section id="summary">
+<div class="container">
+<div class="section-num">01&nbsp; Executive summary</div>
+<h2>The keyword research in one page</h2>
+
+<div class="grid-4" style="margin-bottom:28px">
+<div class="stat"><div class="stat-num" style="color:var(--red)">90</div><div class="stat-label">Keywords</div><div class="stat-sub">Across 7 service categories + geo + industry</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--green)">47,990</div><div class="stat-label">Total monthly vol</div><div class="stat-sub">Addressable search volume (US)</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--blue)">71</div><div class="stat-label">Sitemap pages</div><div class="stat-sub">25 P0 / 40 P1 / 6 P2</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--orange)">35</div><div class="stat-label">AI Overview</div><div class="stat-sub">35/90 keywords have confirmed AI Overview in SERP</div></div>
+</div>
+
+<div class="grid-2">
+<div class="card priority-p0">
+<h4>Key findings</h4>
+<ul>
+<li><strong>33 commercial/transactional keywords</strong> with direct purchase intent</li>
+<li><strong>Steel fabrication (18,100 vol, KD 17)</strong> is the single biggest easy-win keyword</li>
+<li><strong>45 of 90 keywords</strong> Redstone has GSC impressions for (best position: 3.3 for "foundry in India")</li>
+<li><strong>Xometry dominates</strong> 46 of our target keywords with avg position 8.3</li>
+<li><strong>Mexico/nearshoring is uncontested</strong> with CPC $21.09 (highest commercial value)</li>
+<li><strong>AI Overview confirmed on 35 keywords</strong> (39% of expanded set) but primarily informational queries. Commercial "services" keywords remain the safest conversion targets.</li>
+</ul>
+</div>
+<div class="card priority-p0">
+<h4>Recommendations</h4>
+<ul>
+<li><strong>Hub structure: HYBRID</strong> (metals as spokes under services + selective industry pages)</li>
+<li><strong>Industries: build Medical + Defense only</strong>. Automotive/Aerospace conditional on certs.</li>
+<li><strong>Xometry Learning/Tools: HYBRID</strong> yes on comparisons + FAQ schema, no on pure informational</li>
+<li><strong>P0 priority: 25 pages in 30 days</strong> -- homepage + ALL country geo pages built first (lowest KD, fastest to rank, core geo positioning)</li>
+<li><strong>Quick wins: KD 0 keywords</strong> for aluminum CNC machining (1,000 vol), stainless steel fab (2,400), geo pages</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 02 DIE CASTING -->
+<section id="diecasting" class="band-surface">
+<div class="container">
+<div class="section-num">02&nbsp; Die casting 6-variant analysis</div>
+<h2>Eric's Slack ask (Apr 30, 09:14): which term to use?</h2>
+
+<p class="lede">Eric asked: "the process is more commonly called high pressure die casting or just die casting." Here is the data on all variants.</p>
+
+<table>
+<thead><tr><th>Keyword</th><th style="text-align:right">Volume</th><th style="text-align:center">KD</th><th style="text-align:right">CPC</th><th>Intent</th><th style="text-align:center">AI Overview</th></tr></thead>
+<tbody>
+<tr><td><strong>die casting</strong></td><td style="text-align:right">4,400</td><td style="text-align:center">40</td><td style="text-align:right">$3.63</td><td>Informational</td><td style="text-align:center">Yes</td></tr>
+<tr><td><strong>high pressure die casting</strong></td><td style="text-align:right">320</td><td style="text-align:center">19</td><td style="text-align:right">$2.54</td><td>Informational</td><td style="text-align:center">Yes</td></tr>
+<tr><td><strong>aluminum die casting</strong></td><td style="text-align:right">880</td><td style="text-align:center">33</td><td style="text-align:right">$3.58</td><td>Informational</td><td style="text-align:center">Yes</td></tr>
+<tr><td><strong>aluminum die casting services</strong></td><td style="text-align:right">110</td><td style="text-align:center">30</td><td style="text-align:right"></td><td>Commercial</td><td style="text-align:center">No</td></tr>
+<tr><td><strong>die casting services</strong></td><td style="text-align:right">260</td><td style="text-align:center">26</td><td style="text-align:right">$3.78</td><td>Commercial</td><td style="text-align:center">No</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<strong>Recommendation:</strong> Use <strong>"die casting"</strong> as the primary anchor for the service hub (vol 4,400). Use <strong>"aluminum die casting"</strong> as the primary anchor for the material spoke (vol 880 + 95% of leads per Eric). Use <strong>"high pressure die casting"</strong> as a dedicated process variant page (vol 320 + hot chamber 170 = cluster 490). KD 19 = very winnable.
+</div>
+</div>
+</section>
+
+<!-- 03 KEYWORDS -->
+<section id="keywords">
+<div class="container">
+<div class="section-num">03&nbsp; Keyword universe</div>
+<h2>All 90 keywords with metrics</h2>
+
+<p class="lede" style="margin-bottom:18px">Sorted by volume descending. Data from SEMrush phrase-match exports (May 6, 2026) + DataForSEO keyword overview + competitor gap analysis + new keyword expansion list. All volumes are US monthly.</p>
+
+<div class="scroll-x">
+<table>
+<thead><tr><th>Keyword</th><th style="text-align:right">Vol</th><th style="text-align:center">KD</th><th style="text-align:right">CPC</th><th>Intent</th><th>AIO</th><th>Top 3 Ranking Domains</th><th>Category</th><th style="text-align:center">GSC Rank (90d)</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>die casting</strong></td>
+<td style="text-align:right">4,400</td>
+<td style="text-align:center">40</td>
+<td style="text-align:right">$3.63</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>diecasting.org<br>fractory.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">40.7</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 18imp</span></td>
+</tr>
+<tr>
+<td><strong>aluminum die casting</strong></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center">33</td>
+<td style="text-align:right">$3.58</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">gabrian.com<br>aluminium-casting.com<br>adc3900.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">89.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>zinc die casting</strong></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">23</td>
+<td style="text-align:right">$3.34</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">diecasting.zinc.org<br>phbcorp.com<br>youtube.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">67.8</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 93imp</span></td>
+</tr>
+<tr>
+<td><strong>high pressure die casting</strong></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">19</td>
+<td style="text-align:right">$2.54</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">cwmdiecast.com<br>en.wikipedia.org<br>rapiddirect.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>die casting services</strong></td>
+<td style="text-align:right">260</td>
+<td style="text-align:center">26</td>
+<td style="text-align:right">$3.78</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">xometry.com<br>norck.com<br>deecometals.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">47.8</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 22imp</span></td>
+</tr>
+<tr>
+<td><strong>hot chamber die casting</strong></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center">9</td>
+<td style="text-align:right">$142.79</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">tfgusa.com<br>rapiddirect.com<br>essentracomponents.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">61.8</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 165imp</span></td>
+</tr>
+<tr>
+<td><strong>cold chamber die casting</strong></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center">1</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">dynacast.com<br>tfgusa.com<br>sksdiecasting.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aluminum die casting services</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">30</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">xometry.com<br>adc3900.com<br>rapiddirect.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">49.1</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 34imp</span></td>
+</tr>
+<tr>
+<td><strong>china die casting</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">18</td>
+<td style="text-align:right">$2.62</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">diecastingschina.com<br>diecastexpo.cn<br>foundry-planet.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">69.1</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 16imp</span></td>
+</tr>
+<tr>
+<td><strong>zinc die casting services</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">23</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">ozarkdie.com<br>phbcorp.com<br>xometry.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">32.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>high pressure zinc die casting</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">9</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">dynacast.com<br>castproducts.com<br>cwmdiecast.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aluminum die cast prototypes</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">7</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">dynacast.com<br>precisecast.com<br>alumacast.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>prototype zinc die casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">decoprod.com<br>alumacast.com<br>seybertcastings.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>die casting in india</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">26</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">rootscast.com<br>sofeast.com<br>rockman.in</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">84.0</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 8imp</span></td>
+</tr>
+<tr>
+<td><strong>aluminum die casting china</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">5</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">diecastingschina.com<br>dynacast.com<br>casting-yz.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>die casting Mexico</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">$3.99</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">dynacast.com<br>dcsmx.com<br>team-ind.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">30.1</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 38imp</span></td>
+</tr>
+<tr>
+<td><strong>Brazil die casting</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">4</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">ensun.io<br>shibaura-machine.com.br<br>casting-yz.com</span></td>
+<td>Die Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>cnc machining</strong></td>
+<td style="text-align:right">12,100</td>
+<td style="text-align:center">74</td>
+<td style="text-align:right">$1.22</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>astromachineworks.com<br>protolabs.com</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">36.9</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 44imp</span></td>
+</tr>
+<tr>
+<td><strong>cnc machining services</strong></td>
+<td style="text-align:right">4,400</td>
+<td style="text-align:center">63</td>
+<td style="text-align:right">$9.21</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">pcbway.com<br>xometry.com<br>protolabs.com</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">27.9</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 111imp</span></td>
+</tr>
+<tr>
+<td><strong>precision cnc machining</strong></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center">18</td>
+<td style="text-align:right">$5.39</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">djc-cnc-machining.com<br>tfgusa.com<br>gscusa.net</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">69.3</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 11imp</span></td>
+</tr>
+<tr>
+<td><strong>custom cnc machining</strong></td>
+<td style="text-align:right">1,300</td>
+<td style="text-align:center">57</td>
+<td style="text-align:right">$5.57</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">pcbway.com<br>xometry.com<br>reddit.com</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">15.3</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 6imp</span></td>
+</tr>
+<tr>
+<td><strong>china cnc machining</strong></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">39</td>
+<td style="text-align:right">$2.85</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">pcbway.com<br>xometry.com<br>reddit.com</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">51.0</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>cnc machining services china</strong></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center">19</td>
+<td style="text-align:right">$10.14</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">pcbway.com<br>jlccnc.com<br>xometry.com</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">60.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>cnc machining india</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">6</td>
+<td style="text-align:right">$6.32</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">etherealmachines.com<br>sharmatechnocast.com<br>jyoti.co.in</span></td>
+<td>Cnc Machining</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">29.5</span><br><span style="font-size:0.78em;color:var(--muted)">2cl / 73imp</span></td>
+</tr>
+<tr>
+<td><strong>custom sheet metal fabrication</strong></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center">51</td>
+<td style="text-align:right">$3.73</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sendcutsend.com<br>xometry.com<br>pcbway.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>precision sheet metal fabrication</strong></td>
+<td style="text-align:right">1,000</td>
+<td style="text-align:center">22</td>
+<td style="text-align:right">$3.24</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sheetmetalfab.com<br>psmsheetmetal.com<br>psmfseattle.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sheet metal fabrication services</strong></td>
+<td style="text-align:right">1,000</td>
+<td style="text-align:center">25</td>
+<td style="text-align:right">$5.35</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sfifab.com<br>sendcutsend.com<br>xometry.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">48.7</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 10imp</span></td>
+</tr>
+<tr>
+<td><strong>hvac sheet metal fabrication</strong></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">6</td>
+<td style="text-align:right">$4.98</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">airideal.com<br>1sourcemechanical.net<br>smcduct.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sheet metal duct fabrication</strong></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">10</td>
+<td style="text-align:right">$2.58</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">smcduct.com<br>fwwebb.com<br>tessiers.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sheet metal prototype fabrication</strong></td>
+<td style="text-align:right">260</td>
+<td style="text-align:center">26</td>
+<td style="text-align:right">$19.59</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">sendcutsend.com<br>xometry.com<br>protolabs.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sheet metal fabrication mexico</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">5</td>
+<td style="text-align:right">$5.49</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">cypressindustries.com<br>cadrex.com<br>onealmfgservices.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">29.4</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 52imp</span></td>
+</tr>
+<tr>
+<td><strong>china sheet metal</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">26</td>
+<td style="text-align:right">$11.53</td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">china-sheetmetal.com<br>komacut.com<br>made-in-china.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">39.1</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 17imp</span></td>
+</tr>
+<tr>
+<td><strong>india sheet metal</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">9</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sheetmetalindia.in<br>sheetmetalworld.com<br>blechindia.com</span></td>
+<td>Sheet Metal</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>investment casting</strong></td>
+<td style="text-align:right">2,900</td>
+<td style="text-align:center">31</td>
+<td style="text-align:right">$3.41</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>aerometals.com<br>youtube.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">65.7</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 63imp</span></td>
+</tr>
+<tr>
+<td><strong>precision investment casting</strong></td>
+<td style="text-align:right">590</td>
+<td style="text-align:center">28</td>
+<td style="text-align:right">$3.14</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">signicast.com<br>en.wikipedia.org<br>kormax.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">70.8</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 5imp</span></td>
+</tr>
+<tr>
+<td><strong>stainless steel investment casting</strong></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">16</td>
+<td style="text-align:right">$4.12</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">aerometals.com<br>milwaukeeprec.com<br>rlmcastings.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>investment casting services</strong></td>
+<td style="text-align:right">210</td>
+<td style="text-align:center">25</td>
+<td style="text-align:right">$7.75</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">metaltek.com<br>tfgusa.com<br>postprecision.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">64.2</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 134imp</span></td>
+</tr>
+<tr>
+<td><strong>prototype investment casting</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">3</td>
+<td style="text-align:right">$9.96</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">epcast.com<br>protocastjlc.com<br>dynacast.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>bronze investment casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">4</td>
+<td style="text-align:right">$2.76</td>
+<td><span class="tag tag-purple">Transactional</span></td>
+<td></td>
+<td><span style="font-size:0.85em">franklincastings.com<br>aerometals.com<br>conex-casting.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">86.0</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>India investment casting</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">investmentcastingindia.com<br>indo-mim.com<br>superqualicast.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>china investment casting</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">$5.39</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">simiscasting.com<br>ihelpergroup.com<br>investmentcasting.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">39.4</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 14imp</span></td>
+</tr>
+<tr>
+<td><strong>mexico investment casting</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">improprecision.com<br>web.investmentcasting.org<br>intercast.com</span></td>
+<td>Investment Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sand casting</strong></td>
+<td style="text-align:right">3,600</td>
+<td style="text-align:center">44</td>
+<td style="text-align:right">$0.89</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>metaltek.com<br>youtube.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">69.1</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 20imp</span></td>
+</tr>
+<tr>
+<td><strong>sand casting services</strong></td>
+<td style="text-align:right">260</td>
+<td style="text-align:center">21</td>
+<td style="text-align:right">$3.20</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">metaltek.com<br>tfgusa.com<br>alcastcompany.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">66.5</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 205imp</span></td>
+</tr>
+<tr>
+<td><strong>sand casting foundry</strong></td>
+<td style="text-align:right">210</td>
+<td style="text-align:center">32</td>
+<td style="text-align:right">$2.08</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">reliance-foundry.com<br>en.wikipedia.org<br>boosealum.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">58.2</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 82imp</span></td>
+</tr>
+<tr>
+<td><strong>China sand casting</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">iron-foundry.com<br>dongruncasting.com<br>sinoindustry.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">47.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 4imp</span></td>
+</tr>
+<tr>
+<td><strong>Brazil foundry</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">smetals.com<br>hengkecasting.com<br>castingarea.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>china foundry</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">34</td>
+<td style="text-align:right">$1.86</td>
+<td><span class="tag tag-outline">Navigational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">link.springer.com<br>scimagojr.com<br>metals-china.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--green);font-weight:700">3.7</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 218imp</span></td>
+</tr>
+<tr>
+<td><strong>foundries in mexico</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">3</td>
+<td style="text-align:right">$4.13</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">amcfoundry.com.mx<br>mexicofoundry.com<br>wedc.org</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">32.6</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 7imp</span></td>
+</tr>
+<tr>
+<td><strong>foundry in India</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">19</td>
+<td style="text-align:right">$36.59</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">ifa.org.in<br>mordorintelligence.com<br>thefoundery.in</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--green);font-weight:700">3.3</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 19imp</span></td>
+</tr>
+<tr>
+<td><strong>sand casting India</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Transactional</span></td>
+<td></td>
+<td><span style="font-size:0.85em">castingindia.com<br>gpclgroup.com<br>sunflametechnocast.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">41.2</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 23imp</span></td>
+</tr>
+<tr>
+<td><strong>sand casting Mexico</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">$3.49</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">improprecision.com<br>fafoundry.com<br>fymsa.com.mx</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">27.0</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 16imp</span></td>
+</tr>
+<tr>
+<td><strong>india foundry</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">14</td>
+<td style="text-align:right">$36.59</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">indianfoundry.org<br>ifa.org.in<br>foundryco.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">13.2</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 6imp</span></td>
+</tr>
+<tr>
+<td><strong>mexico foundry</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right">$3.54</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">mexicofoundry.com<br>matfoundrygroup.com<br>ramsa.com.mx</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">37.8</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 4imp</span></td>
+</tr>
+<tr>
+<td><strong>Brazil sand casting</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">3</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">redstonemanufacturing.com<br>ensun.io<br>investmentprecisioncasting.com</span></td>
+<td>Sand Casting</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>metal injection molding</strong></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center">22</td>
+<td style="text-align:right">$3.98</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>gknpm.com<br>xometry.com</span></td>
+<td>Mim</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">19.4</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 185imp</span></td>
+</tr>
+<tr>
+<td><strong>metal injection molding services</strong></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">20</td>
+<td style="text-align:right">$14.15</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">optimim.com<br>biomerics.com<br>smithmetals.com</span></td>
+<td>Mim</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">62.7</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 215imp</span></td>
+</tr>
+<tr>
+<td><strong>China metal injection molding</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">zcmim.com<br>finemim.com<br>jhmim.com</span></td>
+<td>Mim</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">63.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 4imp</span></td>
+</tr>
+<tr>
+<td><strong>metal injection molding India</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">4</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">indo-mim.com<br>meta-mim.com<br>dir.indiamart.com</span></td>
+<td>Mim</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">20.0</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 20imp</span></td>
+</tr>
+<tr>
+<td><strong>mexico metal injection molding</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">9</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">firstmold.com<br>amfasinternational.com<br>ensun.io</span></td>
+<td>Mim</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>plastic injection molding</strong></td>
+<td style="text-align:right">5,400</td>
+<td style="text-align:center">49</td>
+<td style="text-align:right">$3.65</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>protolabs.com<br>youtube.com</span></td>
+<td>Plastic Injection</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">39.9</span><br><span style="font-size:0.78em;color:var(--muted)">1cl / 11imp</span></td>
+</tr>
+<tr>
+<td><strong>plastic injection molding services</strong></td>
+<td style="text-align:right">1,900</td>
+<td style="text-align:center">49</td>
+<td style="text-align:right">$6.10</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">xometry.com<br>protolabs.com<br>pcbway.com</span></td>
+<td>Plastic Injection</td>
+<td style="text-align:center"><span style="color:var(--orange);font-weight:700">17.4</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 7imp</span></td>
+</tr>
+<tr>
+<td><strong>plastic injection molding mexico</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">12</td>
+<td style="text-align:right">$7.17</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">azmexplastics.com<br>ksplastic.com<br>firstmold.com</span></td>
+<td>Plastic Injection</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">46.2</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 76imp</span></td>
+</tr>
+<tr>
+<td><strong>China plastic injection molding</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">56</td>
+<td style="text-align:right">$5.96</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">china-plastic-injection-molding.com<br>moldchina.com<br>upmold.com</span></td>
+<td>Plastic Injection</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>india plastic injection molding</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">31</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">dalalplastics.com<br>sofeast.com<br>kruger.industries</span></td>
+<td>Plastic Injection</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aluminum casting</strong></td>
+<td style="text-align:right">1,000</td>
+<td style="text-align:center">21</td>
+<td style="text-align:right">$3.42</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">xometry.com<br>instructables.com<br>casttechnologies.net</span></td>
+<td>Aluminum</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aluminum cnc machining</strong></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">23</td>
+<td style="text-align:right">$1.88</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">reddit.com<br>3ds.com<br>protolabs.com</span></td>
+<td>Aluminum</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>prototype aluminum casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">3</td>
+<td style="text-align:right">$19.73</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">craftpattern.com<br>precisecast.com<br>ermak.com</span></td>
+<td>Aluminum</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>steel fabrication</strong></td>
+<td style="text-align:right">9,900</td>
+<td style="text-align:center">58</td>
+<td style="text-align:right">$3.22</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">steelfab-inc.com<br>en.wikipedia.org<br>inbound.cammmetals.com</span></td>
+<td>Steel</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>stainless steel fabrication</strong></td>
+<td style="text-align:right">1,300</td>
+<td style="text-align:center">31</td>
+<td style="text-align:right">$3.78</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">stainlessfab.com<br>ssfab.net<br>sstlf.com</span></td>
+<td>Stainless Steel</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>automotive manufacturing</strong></td>
+<td style="text-align:right">2,900</td>
+<td style="text-align:center">52</td>
+<td style="text-align:right">$4.17</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">en.wikipedia.org<br>automotivemanufacturingsolutions.com<br>autosinnovate.org</span></td>
+<td>Automotive</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>automotive machining</strong></td>
+<td style="text-align:right">590</td>
+<td style="text-align:center">19</td>
+<td style="text-align:right">$2.34</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">aztalan.com<br>methodsmachine.com<br>automotivemachine.com</span></td>
+<td>Automotive</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aerospace manufacturing</strong></td>
+<td style="text-align:right">5,400</td>
+<td style="text-align:center">72</td>
+<td style="text-align:right">$2.05</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">aero-space.us<br>aero-mag.com<br>aerospacemanufacturing.com</span></td>
+<td>Aerospace</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>aerospace machining</strong></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center">34</td>
+<td style="text-align:right">$3.49</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">reddit.com<br>ardelengineering.com<br>fictiv.com</span></td>
+<td>Aerospace</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>manufacturing in mexico</strong></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">21</td>
+<td style="text-align:right">$9.80</td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td><span style="font-size:0.85em">tetakawi.com<br>napsintl.com<br>trade.gov</span></td>
+<td>Geo</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>cnc machining mexico</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">7</td>
+<td style="text-align:right">$9.40</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">metricsmexico.com<br>gsprecision.com<br>customcnc.mx</span></td>
+<td>Geo</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">42.6</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 11imp</span></td>
+</tr>
+<tr>
+<td><strong>custom metal fabrication</strong></td>
+<td style="text-align:right">3,600</td>
+<td style="text-align:center">55</td>
+<td style="text-align:right">$3.36</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sendcutsend.com<br>custommetalfabricators.com<br>cut2sizemetals.com</span></td>
+<td>Cross Service</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">85.5</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 2imp</span></td>
+</tr>
+<tr>
+<td><strong>grey iron casting</strong></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">$2.85</td>
+<td><span class="tag tag-yellow">Info + Transactional</span></td>
+<td></td>
+<td><span style="font-size:0.85em">grey-iron-castings.com<br>acmefoundry.net<br>quakercitycastings.com</span></td>
+<td>Cross Service</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>cast iron castings</strong></td>
+<td style="text-align:right">590</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">$4.03</td>
+<td><span class="tag tag-purple">Transactional</span></td>
+<td></td>
+<td><span style="font-size:0.85em">quakercitycastings.com<br>libertycasting.com<br>deecometals.com</span></td>
+<td>Cross Service</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>custom metal casting</strong></td>
+<td style="text-align:right">210</td>
+<td style="text-align:center">23</td>
+<td style="text-align:right">$2.97</td>
+<td><span class="tag tag-green">Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">rotometals.com<br>reliance-foundry.com<br>customcastings.com</span></td>
+<td>Cross Service</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>forged vs cast</strong></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">$0.18</td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">cornellforge.com<br>milwaukeeforge.com<br>stitchgolf.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sg iron vs cast iron</strong></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">$0.08</td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">hustonindia.com<br>quora.com<br>urick.net</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>gray iron vs ductile iron</strong></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">pentictonfoundry.com<br>jccasting.com<br>practicalmachinist.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>ductile iron vs carbon steel</strong></td>
+<td style="text-align:right">90</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">mcwanepoles.com<br>pentictonfoundry.com<br>blog.thepipingmart.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>casting vs machining</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">reddit.com<br>china-machining.com<br>3erp.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>malleable iron vs cast iron</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Commercial</span></td>
+<td></td>
+<td><span style="font-size:0.85em">essentracomponents.com<br>blog.boshart.com<br>irondoorsarizona.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>sand casting cost</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">reddit.com<br>lbfoundry.com<br>metaltek.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>die cast zinc corrosion</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-yellow">Info + Transactional</span></td>
+<td></td>
+<td><span style="font-size:0.85em">diecasting.zinc.org<br>decoprod.com<br>dynacast.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+<tr>
+<td><strong>advantages of zinc die casting</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center"></td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">diecasting.zinc.org<br>dynacast.com<br>decoprod.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted);font-weight:700">52.0</span><br><span style="font-size:0.78em;color:var(--muted)">0cl / 3imp</span></td>
+</tr>
+<tr>
+<td><strong>investment casting advantages and disadvantages</strong></td>
+<td style="text-align:right">10</td>
+<td style="text-align:center">1</td>
+<td style="text-align:right"></td>
+<td><span class="tag tag-blue">Informational</span></td>
+<td></td>
+<td><span style="font-size:0.85em">sunrise-metal.com<br>tfgusa.com<br>alliedcasting.com</span></td>
+<td>Resource / guide</td>
+<td style="text-align:center"><span style="color:var(--muted)">Not ranking</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="cite">Sources: SEMrush Keyword Magic Tool + Google Search Console (90d via API) (phrase match, US, May 6 2026), DataForSEO Labs keyword overview + SERP analysis, SEMrush competitive gap (Xometry/Fictiv/DeeCo Metals, Apr 30 2026), and new-keywords.csv expansion list.</p>
+</div>
+</section>
+
+<!-- 04 HYPHENATED DOMAIN AUDIT -->
+<section id="hyphen" class="band-surface">
+<div class="container">
+<div class="section-num">04&nbsp; Hyphenated domain audit</div>
+<h2>redstone-manufacturing.com &mdash; is it cannibalizing?</h2>
+
+<p class="lede">Eric is paying for both <code>redstonemanufacturing.com</code> and <code>redstone-manufacturing.com</code> (with hyphen). Leo flagged this on May 4. Here is the SEO audit.</p>
+
+<div class="grid-4" style="margin-bottom:28px">
+<div class="stat"><div class="stat-num" style="color:var(--red)">0</div><div class="stat-label">Organic keywords</div><div class="stat-sub">SEMrush US, UK, FR &mdash; all zero</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--red)">0</div><div class="stat-label">Domain rank</div><div class="stat-sub">DataForSEO domain rank overview: empty</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--red)">0</div><div class="stat-label">Ranked keywords</div><div class="stat-sub">DataForSEO ranked keywords: empty</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--muted)">A2</div><div class="stat-label">Hosting</div><div class="stat-sub">Default A2 Hosting placeholder page</div></div>
+</div>
+
+<div class="grid-2">
+<div class="card priority-p0">
+<h4>What we found</h4>
+<table>
+<thead><tr><th>Check</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td>Live site content</td><td><strong>A2 Hosting default page</strong> ("Welcome again to A2 Hosting"). No Redstone content whatsoever.</td></tr>
+<tr><td>SEMrush Organic Rankings (US)</td><td><strong>0 keywords</strong> in Google top 100. "We couldn't find any data related to your request."</td></tr>
+<tr><td>SEMrush Organic Rankings (UK, FR)</td><td><strong>0 keywords</strong> across all checked databases.</td></tr>
+<tr><td>DataForSEO Domain Rank Overview</td><td><strong>Empty result</strong> &mdash; no ranking or traffic data exists.</td></tr>
+<tr><td>DataForSEO Ranked Keywords</td><td><strong>Empty result</strong> &mdash; domain ranks for zero keywords in Google US.</td></tr>
+<tr><td>Cannibalizing redstonemanufacturing.com?</td><td><strong>No.</strong> The domain has zero indexed content, zero rankings, and zero organic visibility.</td></tr>
+<tr><td>Serving any content?</td><td><strong>No.</strong> Only the default hosting provider placeholder page.</td></tr>
+<tr><td>Backlink profile</td><td>Unable to verify (DFS backlinks subscription not active), but given zero rankings and a placeholder page, any backlinks are likely spam or irrelevant.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="card priority-p1">
+<h4>Recommendation</h4>
+<ul>
+<li><strong>No SEO risk.</strong> The hyphenated domain is not cannibalizing, not serving content, and has zero search visibility. It is completely inert from an SEO perspective.</li>
+<li><strong>301 redirect it</strong> to <code>redstonemanufacturing.com</code>. This is the safest action &mdash; it captures any direct-type traffic from users who guess the hyphenated version, and consolidates any future link equity.</li>
+<li><strong>Keep the registration.</strong> Don't let the domain expire &mdash; a competitor or squatter could register it and create a confusing brand signal. The registration cost is minimal insurance.</li>
+<li><strong>Cancel the A2 Hosting.</strong> Once the 301 redirect is configured at the DNS/registrar level (either via the registrar's forwarding feature or a simple Cloudflare redirect rule), there is no need to pay for hosting on this domain. The redirect can be done without a hosting account.</li>
+<li><strong>Timeline:</strong> Low priority. Can be done any time, but ideally before the new site launches to ensure clean redirect mapping.</li>
+</ul>
+</div>
+</div>
+
+<div class="callout-good">
+<strong>Bottom line:</strong> redstone-manufacturing.com is a dead domain with an A2 Hosting placeholder. Zero rankings, zero traffic, zero cannibalization risk. 301 redirect to redstonemanufacturing.com, keep the registration, cancel the hosting. 5-minute fix.
+</div>
+</div>
+</section>
+
+<!-- 05 HUB STRUCTURE -->
+<section id="hub">
+<div class="container">
+<div class="section-num">05&nbsp; Hub structure decision</div>
+<h2>Industries vs metals: the data</h2>
+
+<p class="lede">Eric asked at 27:58: "Where's the proof that industries is more important than metals?" Here is the proof. Short answer: <strong>both matter, but at different levels of the architecture.</strong></p>
+
+<div class="grid-2" style="margin-top:24px">
+<div>
+<h3>Industry keywords (total: 49,010 /mo)</h3>
+<table>
+<thead><tr><th>Industry</th><th style="text-align:right">Volume</th><th style="text-align:center">Avg KD</th><th style="text-align:right">Avg CPC</th><th>Top keyword</th></tr></thead>
+<tbody>
+<tr><td>Automotive</td><td style="text-align:right">20,880</td><td style="text-align:center">12</td><td style="text-align:right">$4.18</td><td>automotive manufacturing (18,100)</td></tr>
+<tr><td>Aerospace</td><td style="text-align:right">19,200</td><td style="text-align:center">13</td><td style="text-align:right">$7.80</td><td>aerospace machining (9,900)</td></tr>
+<tr><td>Medical</td><td style="text-align:right">6,020</td><td style="text-align:center">7</td><td style="text-align:right">$10.01</td><td>medical device mfg (4,400)</td></tr>
+<tr><td>Defense</td><td style="text-align:right">2,910</td><td style="text-align:center">17</td><td style="text-align:right">$0.95</td><td>defense manufacturing (1,900)</td></tr>
+<tr style="font-weight:700"><td>TOTAL</td><td style="text-align:right">49,010</td><td style="text-align:center">12</td><td style="text-align:right">$5.73</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3>Metal keywords (total: 37,110 /mo)</h3>
+<table>
+<thead><tr><th>Metal</th><th style="text-align:right">Volume</th><th style="text-align:center">Avg KD</th><th style="text-align:right">Avg CPC</th><th>Top keyword</th></tr></thead>
+<tbody>
+<tr><td>Steel</td><td style="text-align:right">19,420</td><td style="text-align:center">6</td><td style="text-align:right">$7.63</td><td>steel fabrication (18,100)</td></tr>
+<tr><td>Aluminum</td><td style="text-align:right">9,860</td><td style="text-align:center">6</td><td style="text-align:right">$8.93</td><td>aluminum casting (5,400)</td></tr>
+<tr><td>Stainless Steel</td><td style="text-align:right">3,630</td><td style="text-align:center">1</td><td style="text-align:right">$14.51</td><td>SS fabrication (2,400)</td></tr>
+<tr><td>Zinc</td><td style="text-align:right">1,230</td><td style="text-align:center">2</td><td style="text-align:right">$6.33</td><td>zinc die casting (880)</td></tr>
+<tr><td>Titanium</td><td style="text-align:right">1,240</td><td style="text-align:center">0</td><td style="text-align:right">$15.14</td><td>titanium parts (590)</td></tr>
+<tr><td>Brass</td><td style="text-align:right">1,040</td><td style="text-align:center">1</td><td style="text-align:right">$6.73</td><td>brass casting (720)</td></tr>
+<tr><td>Copper</td><td style="text-align:right">690</td><td style="text-align:center">4</td><td style="text-align:right">$12.38</td><td>copper casting (390)</td></tr>
+<tr style="font-weight:700"><td>TOTAL</td><td style="text-align:right">37,110</td><td style="text-align:center">3</td><td style="text-align:right">$10.25</td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="callout" style="margin-top:24px">
+<strong>Recommendation: HYBRID.</strong> Industries have 32% more total volume (49K vs 37K) but are top-heavy (automotive + aerospace = 57%) and Eric says Redstone doesn't do much of either. Metals have <strong>4x lower KD</strong> (avg 3 vs 12) and <strong>80% higher CPC</strong> ($10.25 vs $5.73) signaling stronger commercial intent.<br><br>
+<strong>Architecture:</strong> Metals as material spokes under service hubs (/services/die-casting/aluminum-die-casting/). Industries as a lightweight separate hub with only Medical and Defense (strong cert alignment). Automotive and Aerospace are conditional on Eric confirming certifications.
+</div>
+</div>
+</section>
+
+<!-- 05 XOMETRY -->
+<section id="xometry">
+<div class="container">
+<div class="section-num">06&nbsp; Xometry Learning/Tools pages</div>
+<h2>Should we build these? Eric's yes/no ask.</h2>
+
+<p class="lede">Eric at 36:43: "I want Jack to look at should we build these or not. I just want to know yes or no." Here is the answer.</p>
+
+<div class="grid-3" style="margin-top:24px">
+<div class="card priority-p0">
+<h4 style="color:var(--green)">YES: Comparison content</h4>
+<ul>
+<li>"Die casting vs injection molding" (vol 170, KD 1)</li>
+<li>"Die casting vs metal injection molding" (vol 70, KD 2)</li>
+<li>Process comparison pages rank well because buyers need decision support</li>
+<li>Low KD = easy wins</li>
+<li>AI Overview present but FAQ schema earns citation</li>
+</ul>
+</div>
+<div class="card priority-p0">
+<h4 style="color:var(--green)">YES: FAQ schema pages</h4>
+<ul>
+<li>FAQ schema on every service page targets AI Overview citations</li>
+<li>Goal: get <em>cited</em> in AI Overviews, not compete with them</li>
+<li>Xometry does this extensively on their knowledge base</li>
+<li>Low effort per page (5-7 Q&A accordion)</li>
+<li>Doubles as on-page engagement signal</li>
+</ul>
+</div>
+<div class="card priority-p2">
+<h4 style="color:var(--red)">NO: Pure informational material specs</h4>
+<ul>
+<li><strong>49% of keywords have AI Overview</strong> in our dataset</li>
+<li>Material spec queries ("what is aluminum die casting") = exactly what AI answers directly</li>
+<li>Eric saw this: "our entire SEO just died" for this content type</li>
+<li>CTR drop of 60%+ where AI Overviews appear (per Adam's parting note)</li>
+<li>High content investment ($1K+ per page with diagrams) for diminishing returns</li>
+</ul>
+</div>
+</div>
+
+<div class="callout-good" style="margin-top:24px">
+<strong>The answer: HYBRID.</strong><br><br>
+<strong>Yes</strong> on comparison content (die casting vs investment casting, casting vs forging) and FAQ schema on every service page. These are low-KD, low-cost, and position Redstone as the decision-support resource buyers need.<br><br>
+<strong>Yes</strong> on calculator/tools if Redstone has proprietary data (e.g., landed-cost calculator for Mexico vs China). Interactive tools earn backlinks and are hard for AI to replicate.<br><br>
+<strong>No</strong> on Xometry-style pure informational material specification pages. AI Overviews now answer "what is aluminum die casting" directly. The expanded set has confirmed AI Overviews on 35 of 90 keywords, concentrated around informational queries. Redstone's existing material guides (st37, ss400, adc12) should be <em>preserved</em> (they still drive ~2K sessions/mo), while net-new resource content should focus on comparison, cost, and material-decision queries that can send qualified readers to service pages.
+</div>
+</div>
+</section>
+
+<!-- 06 URL TREE -->
+<section id="urltree" style="background:#0a0a0a;color:#e0e0e0;border-top:none">
+<div class="container">
+<div class="section-num" style="color:var(--red)">07&nbsp; Full URL tree</div>
+<h2 style="color:#fff">71-page sitemap, hub-and-spoke architecture</h2>
+
+<div class="legend" style="color:#999;margin-bottom:24px">
+<span class="legend-item"><span class="legend-dot" style="background:var(--red);border-color:var(--red)"></span> P0 &mdash; first 30 days (country pages)</span>
+<span class="legend-item"><span class="legend-dot" style="background:var(--orange);border-color:var(--orange)"></span> P1 &mdash; days 31&ndash;60</span>
+<span class="legend-item"><span class="legend-dot" style="background:var(--blue);border-color:var(--blue)"></span> P2 &mdash; days 61&ndash;90</span>
+<span class="legend-item"><span style="display:inline-block;width:10px;height:10px;background:#4fc3f7;border-radius:2px;margin-right:6px;vertical-align:middle"></span> <span style="color:#4fc3f7">Existing page (live on site)</span></span>
+<span class="legend-item"><span style="display:inline-block;width:10px;height:10px;background:#666;border-radius:2px;margin-right:6px;vertical-align:middle"></span> New page</span>
+</div>
+
+<div class="tree" style="background:#111;border-color:#222;color:#ccc;font-size:13.5px;line-height:1.85;padding:28px 32px"><span class="hub-label" style="font-size:1.15em">redstonemanufacturing.com/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">homepage</span>
+
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+<span style="color:var(--red);font-weight:700;font-size:0.95em;letter-spacing:0.08em">  SERVICES</span>
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+
+<span class="hub-label">/services/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">services index</span>
+<span class="connector">|</span>
+<span class="connector">+--</span> <span class="existing">/services/die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">4,400</span> <span class="note" style="color:#555">"die casting services"</span>
+<span class="connector">|   +--</span> <span class="existing">/services/die-casting/aluminum-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">880</span>
+<span class="connector">|   +--</span> <span class="existing">/services/die-casting/zinc-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">390</span>
+<span class="connector">|   +--</span> <span class="existing">/services/die-casting/high-pressure-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">320</span>
+<span class="connector">|   +--</span> <span class="existing">/services/die-casting/hot-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">170</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/die-casting/cold-chamber-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">170</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/die-casting/high-pressure-zinc/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">110</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/die-casting/aluminum-prototypes/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">70</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/die-casting/prototype-zinc/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">50</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|</span>
+<span class="connector">+--</span> <span class="existing">/services/cnc-machining/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">4,400</span> <span class="note" style="color:#555">"cnc machining services"</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/cnc-machining/aluminum/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">390</span> <span class="note" style="color:#555">NEW - KD 0</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/cnc-machining/precision/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">1,600</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|</span>
+<span class="connector">+--</span> <span class="existing">/services/sheet-metal-fabrication/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">1,000</span> <span class="note" style="color:#555">"sheet metal fab services"</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/sheet-metal-fabrication/hvac/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">390</span> <span class="note" style="color:#555">NEW - KD 6</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/sheet-metal-fabrication/prototype/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">260</span> <span class="note" style="color:#555">NEW - CPC $19</span>
+<span class="connector">|</span>
+<span class="connector">+--</span> <span class="existing">/services/investment-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">2,900</span> <span class="note" style="color:#555">"investment casting services"</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/investment-casting/stainless-steel/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">320</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">|   +--</span> <span class="new-page">/services/investment-casting/prototype/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">110</span> <span class="note" style="color:#555">NEW - CPC $9.96</span>
+<span class="connector">|</span>
+<span class="connector">+--</span> <span class="existing">/services/sand-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">3,600</span> <span class="note" style="color:#555">"sand casting services"</span>
+<span class="connector">+--</span> <span class="existing">/services/metal-injection-molding/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">1,600</span>
+<span class="connector">+--</span> <span class="existing">/services/plastic-injection-molding/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">5,400</span>
+<span class="connector">+--</span> <span class="new-page">/services/stainless-steel-fabrication/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">1,300</span> <span class="note" style="color:#555">NEW - KD 31</span>
+<span class="connector">+--</span> <span class="new-page">/services/cast-iron-castings/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">590</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/services/grey-iron-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">880</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/services/aluminum-casting/prototype/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW - CPC $19.73</span>
+
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+<span style="color:var(--red);font-weight:700;font-size:0.95em;letter-spacing:0.08em">  INDUSTRIES</span>
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+
+<span class="new-page">/industries/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">lightweight hub</span>
+<span class="connector">+--</span> <span class="new-page">/industries/automotive/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">2,900</span> <span class="note" style="color:#555">NEW - CONDITIONAL on IATF 16949</span>
+<span class="connector">+--</span> <span class="new-page">/industries/aerospace/</span> <span class="priority-badge badge-p2">P2</span> <span class="vol">880</span> <span class="note" style="color:#555">NEW - CONDITIONAL on AS9100</span>
+
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+<span style="color:var(--red);font-weight:700;font-size:0.95em;letter-spacing:0.08em">  COUNTRY PAGES</span> <span style="color:#666;font-size:0.85em">&mdash; P0 priority, existing URLs preserved</span>
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+
+<span class="hub-label">/mexico/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"foundries in mexico"</span>
+<span class="connector">+--</span> <span class="existing">/mexico/die-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"die casting mexico"</span>
+<span class="connector">+--</span> <span class="existing">/mexico/cnc-machining/</span> <span class="priority-badge badge-p0">P0</span> <span class="vol">70</span> <span class="note" style="color:#555">"cnc machining mexico"</span>
+<span class="connector">+--</span> <span class="existing">/mexico/sheet-metal-fabrication/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"sheet metal fabrication mexico"</span>
+<span class="connector">+--</span> <span class="existing">/mexico/plastic-injection-molding/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"plastic injection molding mexico"</span>
+<span class="connector">+--</span> <span class="existing">/mexico/sand-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"sand casting mexico"</span>
+
+<span class="hub-label">/india/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"foundry in india" &mdash; GSC pos 3.3</span>
+<span class="connector">+--</span> <span class="existing">/india/die-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"die casting in india"</span>
+<span class="connector">+--</span> <span class="existing">/india/investment-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"india investment casting"</span>
+<span class="connector">+--</span> <span class="existing">/india/sand-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"sand casting india"</span>
+<span class="connector">+--</span> <span class="existing">/india/metal-injection-molding-mim/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"metal injection molding india"</span>
+<span class="connector">+--</span> <span class="existing">/india/cnc-machining/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"cnc machining india"</span>
+
+<span class="hub-label">/china/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">tariff context &mdash; "china foundry" GSC pos 3.7</span>
+<span class="connector">+--</span> <span class="existing">/china/die-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="vol">110</span> <span class="note" style="color:#555">"china die casting" CPC $2.62</span>
+<span class="connector">+--</span> <span class="existing">/china/cnc-machining/</span> <span class="priority-badge badge-p0">P0</span> <span class="vol">320</span> <span class="note" style="color:#555">"cnc machining services china"</span>
+<span class="connector">+--</span> <span class="existing">/china/sand-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"china sand casting"</span>
+<span class="connector">+--</span> <span class="existing">/china/metal-injection-molding/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"china metal injection molding"</span>
+<span class="connector">+--</span> <span class="existing">/china/plastic-injection-molding/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"china plastic injection molding"</span>
+<span class="connector">+--</span> <span class="new-page">/china/investment-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">NEW &mdash; "china investment casting"</span>
+<span class="connector">+--</span> <span class="new-page">/china/sheet-metal/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">NEW &mdash; CPC $30.68 HIGHEST</span>
+<span class="connector">+--</span> <span class="new-page">/china/aluminum-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW &mdash; "aluminum die casting china"</span>
+
+<span class="hub-label">/brazil/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"brazil foundry"</span>
+<span class="connector">+--</span> <span class="existing">/brazil/die-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"brazil die casting"</span>
+<span class="connector">+--</span> <span class="existing">/brazil/sand-casting/</span> <span class="priority-badge badge-p0">P0</span> <span class="note" style="color:#555">"brazil sand casting" &mdash; Redstone ranks #1!</span>
+
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+<span style="color:var(--red);font-weight:700;font-size:0.95em;letter-spacing:0.08em">  RESOURCES</span>
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+
+<span class="new-page">/resources/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">authority hub</span>
+<span class="connector">+--</span> <span class="new-page">/resources/material-guides/</span> <span class="note" style="color:#555">preserve existing st37, ss400, adc12...</span>
+<span class="connector">+--</span> <span class="new-page">/resources/forged-vs-cast/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">1,600</span> <span class="note" style="color:#555">NEW &mdash; comparison</span>
+<span class="connector">+--</span> <span class="new-page">/resources/sg-iron-vs-cast-iron/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">880</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/gray-iron-vs-ductile-iron/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">170</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/ductile-iron-vs-carbon-steel/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">90</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/casting-vs-machining/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">70</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/malleable-iron-vs-cast-iron/</span> <span class="priority-badge badge-p1">P1</span> <span class="vol">70</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/sand-casting-cost/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/die-cast-zinc-corrosion/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/advantages-of-zinc-die-casting/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW</span>
+<span class="connector">+--</span> <span class="new-page">/resources/investment-casting-advantages-disadvantages/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">NEW</span>
+
+<span style="color:#333;font-size:0.9em">================================================================================</span>
+
+<span class="new-page">/case-studies/halliburton/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">$1.2M savings &mdash; from PDF</span>
+<span class="new-page">/about/</span> <span class="priority-badge badge-p1">P1</span>   <span class="new-page">/contact/</span> <span class="priority-badge badge-p1">P1</span>   <span class="new-page">/quote/</span> <span class="priority-badge badge-p1">P1</span> <span class="note" style="color:#555">multi-step form</span>
+</div>
+
+<div style="margin-top:24px" class="grid-3">
+<div class="card priority-p0">
+<h4>P0 &mdash; first 30 days&nbsp; <span class="tag tag-red">25 pages</span></h4>
+<p style="font-size:0.88em">Homepage + ALL country geo pages. Country pages have lowest KD (most KD 0), fastest ranking trajectory, and directly serve Redstone's core geo positioning. Mexico (6 pages) + India (6) + China (8) + Brazil (4).</p>
+</div>
+<div class="card priority-p1">
+<h4>P1 &mdash; days 31&ndash;60&nbsp; <span class="tag tag-orange">40 pages</span></h4>
+<p style="font-size:0.88em">All service hubs plus new first-60-day prototype, iron, zinc, China aluminum die casting, and resource comparison pages from the expanded keyword list. These add low-KD decision-support and RFQ-intent coverage without changing existing country URLs.</p>
+</div>
+<div class="card priority-p2">
+<h4>P2 &mdash; days 61&ndash;90&nbsp; <span class="tag tag-blue">6 pages</span></h4>
+<p style="font-size:0.88em">MIM + plastic injection. HVAC + prototype sheet metal. 2 industry pages (conditional). Stainless steel investment casting moves into P1 because the new keyword list marks it first-60-day priority.</p>
+</div>
+</div>
+
+<p class="cite" style="margin-top:18px">P0 + P1 + P2 = 71 pages. Plus ~25 material guide pages preserved under /resources/material-guides/. Total live at 90 days: ~99 URLs with full hub-and-spoke topology.</p>
+</div>
+</section>
+
+<!-- 07 SITEMAP DETAIL -->
+<section id="sitemap" class="band-dark">
+<div class="container">
+<div class="section-num" style="color:#888">08&nbsp; SEO-ready sitemap (detail)</div>
+<h2 style="color:#fff">71 pages, phased P0 / P1 / P2</h2>
+
+<div class="legend" style="color:#888">
+<span class="legend-item"><span class="legend-dot" style="background:var(--red);border-color:var(--red)"></span> P0: ship in 30 days (25 pages)</span>
+<span class="legend-item"><span class="legend-dot" style="background:var(--orange);border-color:var(--orange)"></span> P1: days 31-60 (40 pages)</span>
+<span class="legend-item"><span class="legend-dot" style="background:var(--blue);border-color:var(--blue)"></span> P2: days 61-90 (6 pages)</span>
+</div>
+
+<h3 style="color:#fff;margin-top:32px">P0: First 30 days -- Homepage + All Country Pages (25 pages)</h3>
+<div class="scroll-x">
+<table>
+<thead><tr><th style="min-width:280px">URL</th><th>Type</th><th>Primary + Secondary Keywords</th><th style="text-align:right">Vol</th><th style="text-align:center">KD</th><th>AIO</th><th>Action</th><th>Notes</th></tr></thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>Homepage</td>
+<td><strong>custom metal fabrication</strong><br><span style="color:var(--muted);font-size:0.85em">custom metal casting</span></td>
+<td style="text-align:right">3,600</td>
+<td style="text-align:center">60</td>
+<td></td>
+<td>Rebuild</td>
+<td style="font-size:0.85em">Conversion hub. Mexico facility + trust bar (ISO 9001 / IATF 16949 / Since 2018) above fold. Multi-step quote form sticky right-rail desktop. H1 targets &quot;custom metal fabrication&quot; (vol 3,600 commercial). Internal links to all 3 hubs. KD 60 = competitive but homepage authority carries it.</td>
+</tr>
+
+
+<tr>
+<td><code>/mexico/</code></td>
+<td>Geo hub</td>
+<td><strong>foundries in mexico</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">3</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Redstone's blue ocean. CPC $21.09. USMCA tariff-free + 6-8 wk faster than China.</td>
+</tr>
+<tr>
+<td><code>/mexico/die-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>die casting Mexico</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">0</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. KD 0. GSC position 30. Ad destination for Daniel's ad groups. USMCA angle.</td>
+</tr>
+<tr>
+<td><code>/mexico/cnc-machining/</code></td>
+<td>Geo x service</td>
+<td><strong>cnc machining mexico</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">7</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 70. KD 7. GSC position 42.6. CPC $9.40. Strongest Mexico service keyword.</td>
+</tr>
+<tr>
+<td><code>/mexico/sheet-metal-fabrication/</code></td>
+<td>Geo x service</td>
+<td><strong>sheet metal fabrication mexico</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">5</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 40. KD 5. GSC position 29.4. Nearshoring play for buyers moving from China.</td>
+</tr>
+<tr>
+<td><code>/mexico/plastic-injection-molding/</code></td>
+<td>Geo x service</td>
+<td><strong>plastic injection molding mexico</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">12</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 70. KD 12. GSC position 46.2. Growing nearshoring category.</td>
+</tr>
+<tr>
+<td><code>/mexico/sand-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>sand casting Mexico</strong><br><span style="color:var(--muted);font-size:0.85em"></span></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 20. KD 0. Completes Mexico service coverage. USMCA nearshoring angle.</td>
+</tr>
+<tr>
+<td><code>/india/</code></td>
+<td>Geo hub</td>
+<td><strong>foundry in India</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">4</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. GSC position 3.3 for "foundry in India" -- already near top. Build to consolidate ranking.</td>
+</tr>
+<tr>
+<td><code>/india/die-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>die casting in india</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">26</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 40. GSC position 84. Dedicated page will push ranking significantly.</td>
+</tr>
+<tr>
+<td><code>/india/investment-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>India investment casting</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 30. KD 0. India has strong investment casting tradition. U.S. engineering oversight.</td>
+</tr>
+<tr>
+<td><code>/india/sand-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>sand casting India</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 20. KD 0. GSC position 41. Dedicated page captures India casting buyers.</td>
+</tr>
+<tr>
+<td><code>/india/metal-injection-molding-mim/</code></td>
+<td>Geo x service</td>
+<td><strong>metal injection molding India</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 20. KD 0. GSC position 20 -- already page 2. Dedicated page pushes to page 1.</td>
+</tr>
+<tr>
+<td><code>/india/cnc-machining/</code></td>
+<td>Geo x service</td>
+<td><strong>cnc machining india</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">6</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 30. KD 6. GSC position 29.5. CPC $6.32. Dedicated page pushes toward page 1.</td>
+</tr>
+<tr>
+<td><code>/china/</code></td>
+<td>Geo hub</td>
+<td><strong>china foundry</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">37</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing country URL preserved. China hub + foundry. GSC position 3.7 -- already top 5! Build to lock in ranking. Tariff context on every China page.</td>
+</tr>
+<tr>
+<td><code>/china/die-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>china die casting</strong></td>
+<td style="text-align:right">140</td>
+<td style="text-align:center">13</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing country URL preserved. Vol 140. CPC $24.43 = extremely high commercial value. GSC position 69. Intercept with Redstone QC oversight + Mexico alternative.</td>
+</tr>
+<tr>
+<td><code>/china/investment-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>china investment casting</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">11</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing country URL preserved. Vol 40. CPC $14.12. GSC position 39. High CPC signals serious buyers. Tariff advisory angle.</td>
+</tr>
+<tr>
+<td><code>/china/sand-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>China sand casting</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 40. KD 0. GSC position 47.5. Pitch Mexico as tariff-free USMCA alternative.</td>
+</tr>
+<tr>
+<td><code>/china/metal-injection-molding/</code></td>
+<td>Geo x service</td>
+<td><strong>China metal injection molding</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 20. KD 0. GSC position 63.5. MIM from China is tariff-exposed. Mexico alternative.</td>
+</tr>
+<tr>
+<td><code>/china/sheet-metal/</code></td>
+<td>Geo x service</td>
+<td><strong>china sheet metal</strong></td>
+<td style="text-align:right">30</td>
+<td style="text-align:center">37</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing country URL preserved. CPC $30.68 = HIGHEST CPC in entire keyword set. GSC position 39. Section 301 tariff angle. Mexico USMCA pitch.</td>
+</tr>
+<tr>
+<td><code>/china/cnc-machining/</code></td>
+<td>Geo x service</td>
+<td><strong>cnc machining services china</strong><br><span style="color:var(--muted);font-size:0.85em">china cnc machining</span></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">7</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 320 = highest China geo keyword. KD 7. GSC position 51. Biggest quick win in China cluster.</td>
+</tr>
+<tr>
+<td><code>/china/plastic-injection-molding/</code></td>
+<td>Geo x service</td>
+<td><strong>China plastic injection molding</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">56</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 50. KD 56. Mexico nearshoring alternative prominently. Section 301 tariff context.</td>
+</tr>
+<tr>
+<td><code>/brazil/</code></td>
+<td>Geo hub</td>
+<td><strong>Brazil foundry</strong></td>
+<td style="text-align:right">20</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Brazil hub. Completes global footprint map. Links to die-casting + sand-casting.</td>
+</tr>
+<tr>
+<td><code>/brazil/die-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>Brazil die casting</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">4</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 0. Facility completeness. Brazil automotive industry may drive demand.</td>
+</tr>
+<tr>
+<td><code>/brazil/sand-casting/</code></td>
+<td>Geo x service</td>
+<td><strong>Brazil sand casting</strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">3</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 0. KD 3. Redstone already ranks #1 in SERP for this keyword!</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<h3 style="color:#fff;margin-top:32px">P1: Days 31-60 -- Service Hubs + New Keyword Expansion (40 pages)</h3>
+<p style="color:#bbb;font-size:0.9em;margin-bottom:16px">Service hubs, capabilities index, material spokes, resources, case study, utility pages, and first-60-day additions from new-keywords.csv. These are the commercial-intent and decision-support pages that convert geo traffic into leads.</p>
+<div class="scroll-x">
+<table>
+<thead><tr><th style="min-width:280px">URL</th><th>Type</th><th>Primary + Secondary Keywords</th><th style="text-align:right">Vol</th><th style="text-align:center">KD</th><th>AIO</th><th>Action</th><th>Notes</th></tr></thead>
+<tbody>
+<tr>
+<td><code>/services/</code></td>
+<td>Hub index</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Services index linking to all 7 service pages. Footer silo links per Omnius pattern.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/</code></td>
+<td>Service hub</td>
+<td><strong>die casting services</strong><br><span style="color:var(--muted);font-size:0.85em">die casting</span></td>
+<td style="text-align:right">4,400</td>
+<td style="text-align:center">40</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Head term &quot;die casting&quot; (4,400 informational) + commercial &quot;die casting services&quot; (260). AI Overview present on head term -- use FAQ schema for AI citation. Eric&#x27;s core service. Xometry ranks #1 for &quot;die casting services.&quot;</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/aluminum-die-casting/</code></td>
+<td>Material spoke</td>
+<td><strong>aluminum die casting services</strong><br><span style="color:var(--muted);font-size:0.85em">aluminum die casting</span></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center">33</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. 95% of die casting leads want aluminum per Eric (Slack Apr 30). Vol 880 + services variant 110. AI Overview present. Lead with USMCA tariff-free angle.</td>
+</tr>
+<tr>
+<td><code>/services/cnc-machining/</code></td>
+<td>Service hub</td>
+<td><strong>cnc machining services</strong><br><span style="color:var(--muted);font-size:0.85em">cnc machining, custom cnc machining</span></td>
+<td style="text-align:right">4,400</td>
+<td style="text-align:center">63</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Highest-volume service. Commercial &quot;cnc machining services&quot; (4,400) as primary -- targets buyer intent. Head term &quot;cnc machining&quot; (12,100) as secondary captures informational traffic. &quot;custom cnc machining&quot; (1,300) as third keyword. KD 63 = competitive but essential. Xometry + Protolabs dominate top 3.</td>
+</tr>
+<tr>
+<td><code>/services/sheet-metal-fabrication/</code></td>
+<td>Service hub</td>
+<td><strong>sheet metal fabrication services</strong><br><span style="color:var(--muted);font-size:0.85em">custom sheet metal fabrication, precision sheet metal fabrication</span></td>
+<td style="text-align:right">1,000</td>
+<td style="text-align:center">25</td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Commercial &quot;services&quot; (1,000) as primary. Cluster vol 3,600 with &quot;custom&quot; (1,600) + &quot;precision&quot; (1,000) as secondaries. Near-me variant (2,900 in SEMrush) shows strong local intent. SendCutSend dominates this SERP organically.</td>
+</tr>
+<tr>
+<td><code>/locations/</code></td>
+<td>Hub index</td>
+<td><strong></strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Optional navigation hub only. Country landing pages keep their existing top-level URLs: /mexico/, /india/, /china/, and /brazil/.</td>
+</tr>
+
+<tr>
+<td><code>/services/die-casting/zinc-die-casting/</code></td>
+<td>Material spoke</td>
+<td><strong>zinc die casting services</strong><br><span style="color:var(--muted);font-size:0.85em">zinc die casting</span></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">23</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 390 + services variant 110 = cluster 500. KD 23 = winnable. AI Overview present. Secondary to aluminum but completes material coverage.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/high-pressure-die-casting/</code></td>
+<td>Process variant</td>
+<td><strong>high pressure die casting services</strong><br><span style="color:var(--muted);font-size:0.85em">high pressure die casting, hot chamber die casting</span></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">19</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Eric asked (Slack Apr 30 09:14): &quot;the process is more commonly called high pressure die casting or just die casting.&quot; Cluster vol 490 (high pressure 320 + hot chamber 170). AI Overview present. KD 19 = very winnable.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/hot-casting/</code></td>
+<td>Process variant</td>
+<td><strong>hot chamber die casting</strong><br><span style="color:var(--muted);font-size:0.85em">high pressure die casting</span></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center">19</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Keep this page live separately from the high-pressure page because it already maps to the existing hot chamber keyword target.</td>
+</tr>
+<tr>
+<td><code>/services/cnc-machining/aluminum/</code></td>
+<td>Material spoke</td>
+<td><strong>aluminum cnc machining</strong></td>
+<td style="text-align:right">1,000</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Vol 1,000. KD 0 = immediate rank opportunity with zero competition at this volume. Fictiv already ranks for this with a material x process page. Quick win -- build early in P1.</td>
+</tr>
+<tr>
+<td><code>/services/cnc-machining/precision/</code></td>
+<td>Service spoke</td>
+<td><strong>precision cnc machining</strong></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center">18</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Vol 1,600. KD 18. CPC $5.39 = strong commercial signal. &quot;Precision&quot; positioning differentiates from commodity machining. Maps to Redstone&#x27;s tolerance +/-0.001&quot; claim. Targets the &quot;I need tight tolerances&quot; buyer.</td>
+</tr>
+<tr>
+<td><code>/services/investment-casting/</code></td>
+<td>Service hub</td>
+<td><strong>investment casting services</strong><br><span style="color:var(--muted);font-size:0.85em">investment casting, precision investment casting</span></td>
+<td style="text-align:right">2,900</td>
+<td style="text-align:center">31</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 2,900 + services 210 + precision 590 = cluster 3,700. AI Overview on head term. Wikipedia + aerometals.com rank #1-2. KD 31 = moderate. Less competitive online than die casting or CNC. &quot;Lost wax casting&quot; is a synonym searchers also use.</td>
+</tr>
+<tr>
+<td><code>/services/investment-casting/stainless-steel/</code></td>
+<td>Material spoke</td>
+<td><strong>stainless steel investment casting</strong><br><span style="color:var(--muted);font-size:0.85em">bronze investment casting</span></td>
+<td style="text-align:right">320</td>
+<td style="text-align:center">16</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>New</td>
+<td style="font-size:0.85em">Existing sitemap recommendation promoted into P1 by new-keywords.csv. KD 16 and CPC $4.12 confirm it belongs in the first 60 days: buyers searching this know the process and material, so the page should focus on tolerances, alloys, finishes, and RFQ conversion.</td>
+</tr>
+<tr>
+<td><code>/services/sand-casting/</code></td>
+<td>Service hub</td>
+<td><strong>sand casting services</strong><br><span style="color:var(--muted);font-size:0.85em">sand casting, sand casting foundry</span></td>
+<td style="text-align:right">3,600</td>
+<td style="text-align:center">44</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 3,600 + services 260 + foundry 210 = cluster 4,070. AI Overview present. Wikipedia + metaltek.com dominate SERP. KD 44 = moderate-hard but &quot;services&quot; and &quot;foundry&quot; variants are much easier.</td>
+</tr>
+<tr>
+<td><code>/services/stainless-steel-fabrication/</code></td>
+<td>Material hub</td>
+<td><strong>stainless steel fabrication</strong></td>
+<td style="text-align:right">2,400</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Vol 2,400. KD 0. Immediate rank -- virtually no competition at this volume. CPC $7.05 signals strong commercial intent. Cross-links to investment-casting/stainless-steel spoke. Stainless steel buyers tend to be higher-value.</td>
+</tr>
+<tr>
+<td><code>/industries/</code></td>
+<td>Hub index</td>
+<td><strong></strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Lightweight hub linking to 2-3 industry verticals based on certification alignment. Not a primary SEO volume driver -- exists for industry-specific buyer journeys and internal linking to capability pages.</td>
+</tr>
+<tr>
+<td><code>/about/</code></td>
+<td>Company</td>
+<td><strong></strong></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center"></td>
+<td></td>
+<td>Rebuild</td>
+<td style="font-size:0.85em">Company page. "Since 2018" + facility locations + team photos. E-E-A-T signal for Google. Named ops leads on page (per Fictiv real-people pattern). Keep URL /about/. Rebuild to match new Astro design system.</td>
+</tr>
+<tr>
+<td><code>/resources/</code></td>
+<td>Hub index</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Resource hub index. Links to material guides library and future pillar guides. Authority hub for long-term SEO moat.</td>
+</tr>
+<tr>
+<td><code>/resources/material-guides/</code></td>
+<td>Hub index</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>Preserve</td>
+<td style="font-size:0.85em">CRITICAL: Re-home existing material spec pages (st37, ss400, adc12, etc). Current organic traffic engine (~2,000 sessions/mo). DO NOT kill in rebuild. 301 each to /resources/material-guides/[slug]/.</td>
+</tr>
+<tr>
+<td><code>/case-studies/halliburton/</code></td>
+<td>Case study</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New (from PDF)</td>
+<td style="font-size:0.85em">$1.2M annual savings. 50 foundries evaluated. Publish from existing PDF. Social proof anchor for every service page.</td>
+</tr>
+<tr>
+<td><code>/contact/</code></td>
+<td>Company</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Keep as-is with light design refresh. Phone visible (+1 330-975-2820).</td>
+</tr>
+<tr>
+<td><code>/quote/</code></td>
+<td>Form page</td>
+<td><strong></strong></td>
+<td style="text-align:right"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">Multi-step quote form. File upload (CAD/STEP/IGES). Volume filter for $50K+. Tariff-inclusive estimates. Embedded on every service + geo LP.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/aluminum-prototypes/</code></td>
+<td>Prototype spoke</td>
+<td><strong>aluminum die cast prototypes</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">7</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Low KD prototype query that captures early-stage RFQ demand before buyers commit to tooling. Fits Redstone's aluminum die casting strength and should link directly to quote/CAD upload paths.</td>
+</tr>
+<tr>
+<td><code>/china/aluminum-die-casting/</code></td>
+<td>Geo x material</td>
+<td><strong>aluminum die casting china</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">5</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Preserves the existing top-level /china/ country architecture while adding a material-specific China sourcing page. KD 5 makes this an easy page to rank, and the page can compare China QC oversight with Mexico tariff-free alternatives.</td>
+</tr>
+<tr>
+<td><code>/services/cast-iron-castings/</code></td>
+<td>Material service page</td>
+<td><strong>cast iron castings</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">20</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Commercial intent with moderate KD. Broadens the material hub beyond aluminum, zinc, and stainless steel into iron casting demand and can internally link to sand casting and foundry geo pages.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/cold-chamber-die-casting/</code></td>
+<td>Process variant</td>
+<td><strong>cold chamber die casting</strong></td>
+<td style="text-align:right">170</td>
+<td style="text-align:center">1</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 1 process variant that complements hot chamber and high-pressure die casting pages. Useful for explaining aluminum/zinc process fit and capturing buyers comparing die casting methods.</td>
+</tr>
+<tr>
+<td><code>/services/grey-iron-casting/</code></td>
+<td>Material service page</td>
+<td><strong>grey iron casting</strong></td>
+<td style="text-align:right">140</td>
+<td style="text-align:center">13</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Adds a dedicated iron material page for a common foundry material. Supports the cast iron cluster and gives comparison posts a commercial destination to link toward.</td>
+</tr>
+<tr>
+<td><code>/services/aluminum-casting/prototype/</code></td>
+<td>Prototype spoke</td>
+<td><strong>prototype aluminum casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">3</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. CPC $19.73 is a strong buying signal despite low volume. This should position Redstone for prototype-to-production aluminum casting and push visitors into the quote workflow.</td>
+</tr>
+<tr>
+<td><code>/services/investment-casting/prototype/</code></td>
+<td>Prototype spoke</td>
+<td><strong>prototype investment casting</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">3</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 3 and CPC $9.96 indicate low-competition RFQ intent. This page should explain rapid prototype casting, tolerances, materials, and when to move from prototype into production.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/prototype-zinc/</code></td>
+<td>Prototype spoke</td>
+<td><strong>prototype zinc die casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 0 prototype term with direct fit to the existing zinc die casting page. Captures engineers evaluating zinc for small precision parts before production tooling.</td>
+</tr>
+<tr>
+<td><code>/services/die-casting/high-pressure-zinc/</code></td>
+<td>Material x process spoke</td>
+<td><strong>high pressure zinc die casting</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">9</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Low KD process/material page that reinforces both zinc die casting and high-pressure die casting topical coverage. Good internal bridge between those existing pages.</td>
+</tr>
+<tr>
+<td><code>/resources/die-cast-zinc-corrosion/</code></td>
+<td>Blog post</td>
+<td><strong>die cast zinc corrosion</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">9</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Decision-support post for buyers worried about zinc material performance. Should answer corrosion risk, coatings, environments, and link to zinc die casting services.</td>
+</tr>
+<tr>
+<td><code>/resources/ductile-iron-vs-carbon-steel/</code></td>
+<td>Blog post</td>
+<td><strong>ductile iron vs carbon steel</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">6</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Comparison query with commercial/informational intent. Helps buyers select between cast and fabricated materials, then routes them to iron casting or steel fabrication pages.</td>
+</tr>
+<tr>
+<td><code>/resources/forged-vs-cast/</code></td>
+<td>Blog post</td>
+<td><strong>forged vs cast</strong></td>
+<td style="text-align:right">880</td>
+<td style="text-align:center">18</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Highest-volume addition. Comparison intent is ideal for Xometry-style decision support, but this page should be commercialized with use cases, cost/tradeoff tables, and links to casting service pages.</td>
+</tr>
+<tr>
+<td><code>/resources/gray-iron-vs-ductile-iron/</code></td>
+<td>Blog post</td>
+<td><strong>gray iron vs ductile iron</strong></td>
+<td style="text-align:right">110</td>
+<td style="text-align:center">6</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Material comparison post supporting the iron casting cluster. Use it to explain strength, machinability, damping, cost, and when to request each material.</td>
+</tr>
+<tr>
+<td><code>/resources/investment-casting-advantages-disadvantages/</code></td>
+<td>Blog post</td>
+<td><strong>investment casting advantages and disadvantages</strong></td>
+<td style="text-align:right">40</td>
+<td style="text-align:center">8</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Informational query that supports the investment casting hub. The reasoning should be buyer-focused: tolerances, surface finish, tooling cost, lead time, and when sand casting or machining is better.</td>
+</tr>
+<tr>
+<td><code>/resources/malleable-iron-vs-cast-iron/</code></td>
+<td>Blog post</td>
+<td><strong>malleable iron vs cast iron</strong></td>
+<td style="text-align:right">70</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 0 material comparison that can win quickly. Supports iron topical authority and links to cast iron casting services.</td>
+</tr>
+<tr>
+<td><code>/resources/sand-casting-cost/</code></td>
+<td>Blog post</td>
+<td><strong>sand casting cost</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 0 cost query with buyer intent. Should explain tooling, material, volume, machining, finish, and freight drivers, then route readers to sand casting quote requests.</td>
+</tr>
+<tr>
+<td><code>/resources/advantages-of-zinc-die-casting/</code></td>
+<td>Blog post</td>
+<td><strong>advantages of zinc die casting</strong></td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">9</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Supports the zinc die casting hub with decision-stage education. Should cover precision, strength, thin walls, surface finish, tooling life, and corrosion considerations.</td>
+</tr>
+<tr>
+<td><code>/resources/sg-iron-vs-cast-iron/</code></td>
+<td>Blog post</td>
+<td><strong>sg iron vs cast iron</strong></td>
+<td style="text-align:right">210</td>
+<td style="text-align:center">1</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. KD 1 iron comparison with meaningful volume. Reinforces ductile/SG iron coverage and should link into grey iron, cast iron castings, and foundry pages.</td>
+</tr>
+<tr>
+<td><code>/resources/casting-vs-machining/</code></td>
+<td>Blog post</td>
+<td><strong>casting vs machining</strong></td>
+<td style="text-align:right">90</td>
+<td style="text-align:center">14</td>
+<td></td>
+<td>New</td>
+<td style="font-size:0.85em">New keyword expansion. Commercial/informational comparison that bridges two core Redstone capabilities. Should help buyers choose casting, CNC machining, or cast-and-machine workflows.</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+
+
+<h3 style="color:#fff;margin-top:32px">P2: Days 61-90 (6 pages)</h3>
+<div class="scroll-x">
+<table>
+<thead><tr><th style="min-width:280px">URL</th><th>Type</th><th>Primary + Secondary Keywords</th><th style="text-align:right">Vol</th><th style="text-align:center">KD</th><th>AIO</th><th>Action</th><th>Notes</th></tr></thead>
+<tbody>
+<tr>
+<td><code>/services/sheet-metal-fabrication/hvac/</code></td>
+<td>Industry spoke</td>
+<td><strong>hvac sheet metal fabrication</strong><br><span style="color:var(--muted);font-size:0.85em">sheet metal duct fabrication</span></td>
+<td style="text-align:right">390</td>
+<td style="text-align:center">6</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>New</td>
+<td style="font-size:0.85em">HVAC is the largest defined vertical for sheet metal fabrication. Vol 390 + duct fabrication 320 = cluster 710. KD 6 = very easy. AI Overview present. Niche page that competitors overlook -- low competition quick win.</td>
+</tr>
+<tr>
+<td><code>/services/sheet-metal-fabrication/prototype/</code></td>
+<td>Service spoke</td>
+<td><strong>sheet metal prototype fabrication</strong></td>
+<td style="text-align:right">260</td>
+<td style="text-align:center">26</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>New</td>
+<td style="font-size:0.85em">Vol 260. CPC $19.59 = one of the highest CPCs in the entire keyword set. Buyers searching &quot;sheet metal prototype fabrication&quot; are ready to spend on rapid prototyping. AI Overview present. Position with speed + Mexico lead-time advantage.</td>
+</tr>
+<tr>
+<td><code>/services/metal-injection-molding/</code></td>
+<td>Service hub</td>
+<td><strong>metal injection molding services</strong><br><span style="color:var(--muted);font-size:0.85em">metal injection molding</span></td>
+<td style="text-align:right">1,600</td>
+<td style="text-align:center">22</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 1,600 + services 320 = cluster 1,920. KD 22 = winnable. AI Overview present. Wikipedia + gknpm.com + Xometry rank top 3. MIM is a niche service -- fewer competitors online means faster ranking trajectory. CPC $14.15 on services variant = very high commercial value.</td>
+</tr>
+<tr>
+<td><code>/services/plastic-injection-molding/</code></td>
+<td>Service hub</td>
+<td><strong>plastic injection molding services</strong><br><span style="color:var(--muted);font-size:0.85em">plastic injection molding</span></td>
+<td style="text-align:right">5,400</td>
+<td style="text-align:center">49</td>
+<td><span style="color:var(--orange);font-weight:600">AI</span></td>
+<td>Keep</td>
+<td style="font-size:0.85em">Existing URL and keyword preserved. Vol 5,400 + services 1,900 = cluster 7,300. Second-highest volume service after CNC machining. KD 49 = competitive. AI Overview on head term. Large market but Redstone competes with dedicated plastic molders. Position with Mexico nearshoring cost advantage.</td>
+</tr>
+<tr>
+<td><code>/industries/automotive/</code></td>
+<td>Industry page</td>
+<td><strong>automotive manufacturing</strong><br><span style="color:var(--muted);font-size:0.85em">automotive machining</span></td>
+<td style="text-align:right">18,100</td>
+<td style="text-align:center">47</td>
+<td></td>
+<td>New (conditional)</td>
+<td style="font-size:0.85em">CONDITIONAL. Vol 18,100 + machining 2,400 = cluster 20,500. Eric said &quot;we don&#x27;t really do automotive and aerospace too much.&quot; Build ONLY if IATF 16949 certification credibly supports automotive claims. KD 47 = hard. If built: lead with IATF 16949 + Mexico facility + quality focus.</td>
+</tr>
+<tr>
+<td><code>/industries/aerospace/</code></td>
+<td>Industry page</td>
+<td><strong>aerospace machining</strong><br><span style="color:var(--muted);font-size:0.85em">aerospace manufacturing</span></td>
+<td style="text-align:right">9,900</td>
+<td style="text-align:center">0</td>
+<td></td>
+<td>New (conditional)</td>
+<td style="font-size:0.85em">CONDITIONAL. Vol 9,900 (KD 0!) + manufacturing 8,100 (KD 72). &quot;aerospace machining&quot; has KD 0 = free ranking BUT credibility without AS9100 is a trust problem. CPC $12.25 = high value if credible. Only build if certs or documented aerospace client work exists.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- 07 COMPETITORS -->
+<section id="competitors">
+<div class="container">
+<div class="section-num">09&nbsp; SERP competitor landscape</div>
+<h2>Top 10 competing domains across the expanded keyword set</h2>
+
+<p class="lede">From DataForSEO SERP Competitors API for the original set, with new-keywords.csv adding service and resource opportunities that still need a fresh competitor pull. Domains ranked by composite rating (keyword overlap x visibility x traffic).</p>
+
+<table>
+<thead><tr><th>#</th><th>Domain</th><th>Keywords</th><th>Avg Position</th><th>Est. Traffic</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>xometry.com</strong></td><td>46</td><td>8.3</td><td>16,588</td><td>Dominant commercial competitor. #1 for "die casting services" and "cnc machining services."</td></tr>
+<tr><td>2</td><td><strong>wikipedia.org</strong></td><td>33</td><td>13.5</td><td>63,715</td><td>Informational queries only. Not a commercial competitor.</td></tr>
+<tr><td>3</td><td><strong>reddit.com</strong></td><td>29</td><td>14.1</td><td>8,018</td><td>UGC/forum. Shows Google values discussion content.</td></tr>
+<tr><td>4</td><td><strong>zetwerk.com</strong></td><td>27</td><td>27.9</td><td>254</td><td>Indian manufacturing platform. Weak positions.</td></tr>
+<tr><td>5</td><td><strong>rapiddirect.com</strong></td><td>25</td><td>29.0</td><td>685</td><td>Chinese manufacturer with good SEO. Ranks for die casting.</td></tr>
+<tr><td>6</td><td><strong>fictiv.com</strong></td><td>21</td><td>19.0</td><td>5,750</td><td>CNC + materials focus. Weaker than Xometry.</td></tr>
+<tr><td>7</td><td><strong>protolabs.com</strong></td><td>18</td><td>7.9</td><td>12,936</td><td>Strong positions when present. CNC + injection molding.</td></tr>
+<tr><td>8</td><td><strong>tfgusa.com</strong></td><td>20</td><td>19.7</td><td>646</td><td>US manufacturer. Niche competitor.</td></tr>
+<tr><td>9</td><td><strong>pcbway.com</strong></td><td>15</td><td>9.7</td><td>4,843</td><td>#1 for "cnc machining services." CNC focus.</td></tr>
+<tr><td>10</td><td><strong>thomasnet.com</strong></td><td>22</td><td>38.5</td><td>4,857</td><td>Directory. Weak positions but broad coverage.</td></tr>
+</tbody>
+</table>
+
+<p class="cite">Source: DataForSEO SERP Competitors API, queried May 6 2026. Excludes YouTube, Facebook, Quora.</p>
+
+<div class="callout-info">
+<strong>Key insight:</strong> AI Overviews trigger on 6/10 head terms we scraped (die casting, high pressure die casting, investment casting, sand casting, manufacturing in mexico, metal injection molding). But the commercial "services" variants (die casting services, cnc machining services, sheet metal fabrication) do NOT trigger AI Overviews. This means <strong>service pages targeting "[process] services" keywords are protected from AI Overview cannibalization.</strong>
+</div>
+</div>
+</section>
+
+<!-- 08 RANKINGS -->
+<section id="rankings" class="band-surface">
+<div class="container">
+<div class="section-num">10&nbsp; Redstone current rankings</div>
+<h2>Where Redstone stands today</h2>
+
+<div class="grid-4" style="margin-bottom:28px">
+<div class="stat"><div class="stat-num">929</div><div class="stat-label">Total keywords</div><div class="stat-sub">Redstone ranks for in Google US</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--red)">7</div><div class="stat-label">Page 1</div><div class="stat-sub">Only 7 keywords in positions 1-10</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--orange)">35%</div><div class="stat-label">Position 51+</div><div class="stat-sub">782 keywords buried on pages 6-10</div></div>
+<div class="stat"><div class="stat-num" style="color:var(--green)">45</div><div class="stat-label">Of our 90</div><div class="stat-sub">Target keywords Redstone currently has GSC impressions for</div></div>
+</div>
+
+<div class="callout-warn">
+<strong>The gap is massive but the opportunity is real.</strong> Of our 90 target keywords, Redstone only has meaningful visibility on a minority today, while most added keywords are low-KD prototype, material, cost, and comparison terms. The expanded sitemap with proper hub-and-spoke architecture, service-specific pages, resource comparison posts, and FAQ schema will create the topical authority needed to rank. The material guide pages (st37, ss400, adc12) prove Redstone CAN rank. We need that same approach applied to commercial-intent service keywords and buyer decision-support content.
+</div>
+</div>
+</section>
+
+<!-- 09 NEXT STEPS -->
+<section id="next">
+<div class="container">
+<div class="section-num">11&nbsp; Next steps</div>
+<h2>Through the Thursday May 7 call</h2>
+
+<table>
+<thead><tr><th>Date</th><th>What</th><th>Owner</th></tr></thead>
+<tbody>
+<tr><td><strong>Wed May 6 (today)</strong></td><td>This document delivered. Kas + Jack sync to converge on sitemap.</td><td>Jack + Kas</td></tr>
+<tr><td><strong>Thu May 7</strong></td><td>3-way call with Eric. Present keyword research, hub recommendation, sitemap. Get sign-off to unblock the build.</td><td>Jack + Kas + Eric</td></tr>
+<tr><td><strong>Fri May 9</strong></td><td>P0 build begins. 25 pages in 30 days. Homepage + all country geo pages (lowest KD, fastest to rank).</td><td>Kas + Rehan</td></tr>
+<tr><td><strong>Mon May 11</strong></td><td>First weekly keyword ranking summary in #redstone-marketing.</td><td>Jack</td></tr>
+</tbody>
+</table>
+
+<div class="grid-2" style="margin-top:24px">
+<div class="card priority-p0">
+<h4>Open decisions for Eric</h4>
+<ol>
+<li><strong>Automotive page:</strong> does IATF 16949 justify building /industries/automotive/?</li>
+<li><strong>Aerospace page:</strong> does Redstone hold AS9100 or have documented aerospace work?</li>
+<li><strong>Mexico hub keyword:</strong> "manufacturing in mexico" (720 vol) or "foundries in mexico" (20 vol) as anchor?</li>
+<li><strong>Sitemap approved?</strong> 71 pages over 90 days. P0 = 25 pages (homepage + all country geo pages), P1 = 40 pages, P2 = 6 pages.</li>
+</ol>
+</div>
+<div class="card priority-p1">
+<h4>What's locked</h4>
+<ul>
+<li>Die casting anchor: "die casting" (4,400) as hub, "aluminum die casting" (880) as material spoke</li>
+<li>Hub structure: hybrid (metals as spokes, industries as lightweight hub)</li>
+<li>Xometry Learning/Tools: hybrid (yes comparisons + FAQ, no pure informational)</li>
+<li>Material guides: preserve existing, 301 to /resources/material-guides/</li>
+<li>All 7 services have dedicated "services" keyword pages</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="band-dark" style="padding:48px 0">
+<div class="container" style="text-align:center">
+<p style="color:#888;font-size:0.85em">Generated May 6, 2026 for the May 7 Eric review call. Data: SEMrush + DataForSEO + competitor gap analysis.</p>
+</div>
+</section>
+
+</body>
+</html>
